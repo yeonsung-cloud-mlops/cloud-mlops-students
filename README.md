@@ -9,6 +9,7 @@ GitHub Pages: <https://yeonsung-cloud-mlops.github.io/cloud-mlops-students/>
 - 15주 프로젝트 로드맵
 - 실습 프로젝트 예시 주제 8개
 - 팀 시작 키트 ZIP
+- 학생 주도 활동 키트와 운영 안내
 - 학생 파일 배포·수령 가이드
 - 1~15주차 Markdown 교안
 - 강의계획·교육계획·NCS 매핑 요약
