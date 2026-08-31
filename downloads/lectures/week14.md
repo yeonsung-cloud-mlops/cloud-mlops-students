@@ -777,7 +777,7 @@ flowchart LR
 
 - 콘솔 경로: **EC2 → Instances → ysu-mlops-lab-ec2**
 - 확인할 것: 중지 상태와 서비스 상태·예정 이벤트를 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 14. 보안 그룹 인바운드 없음
 
@@ -785,7 +785,7 @@ flowchart LR
 
 - 콘솔 경로: **EC2 → Security Groups → ysu-mlops-lab-sg → Inbound rules**
 - 확인할 것: 인터넷에 공개된 인바운드 규칙이 없음을 콘솔에서 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#SecurityGroup:groupId=sg-0bb5a3d4cbc06cdda)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#SecurityGroup:)
 
 ### 15. S3 프로젝트 폴더 화면
 

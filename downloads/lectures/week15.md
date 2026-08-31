@@ -836,7 +836,7 @@ aws ec2 describe-addresses --region ap-northeast-2 --output table
 
 - 콘솔 경로: **EC2 → Instances → Instance state → Terminate instance**
 - 확인할 것: stopped를 최종 정리로 보지 않고 terminated로 바꾼다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 08. EC2 종료와 EBS 삭제 확인
 

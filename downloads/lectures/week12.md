@@ -958,7 +958,7 @@ sequenceDiagram
 
 - 콘솔 경로: **EC2 → Instances → ysu-mlops-lab-ec2 → Start instance**
 - 확인할 것: stopped에서 pending으로 바뀌는지 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 12. 배포 대상과 SSM 연결 확인
 
@@ -990,7 +990,7 @@ sequenceDiagram
 
 - 콘솔 경로: **Systems Manager → Run Command → d6502f2b 명령**
 - 확인할 것: 전체 상태 성공, 대상 1개, 오류 0개를 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command/d6502f2b-496e-43c7-9ce8-14926dec8975?region=ap-northeast-2)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2)
 
 ### 16. 배포 명령 상세 출력
 
@@ -998,7 +998,7 @@ sequenceDiagram
 
 - 콘솔 경로: **Systems Manager → Run Command → 대상 인스턴스 → Output**
 - 확인할 것: 실제 배포 태그, 다이제스트, healthy 응답을 한 화면에서 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command/d6502f2b-496e-43c7-9ce8-14926dec8975/i-09e3f0c913e337111?region=ap-northeast-2)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2)
 
 ### 17. 버전 전환과 롤백
 
@@ -1022,7 +1022,7 @@ sequenceDiagram
 
 - 콘솔 경로: **EC2 → Instances → Instance state → Stop instance**
 - 확인할 것: running에서 stopping으로 바뀌는지 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 20. 배포 대상 중지 완료
 
@@ -1030,6 +1030,6 @@ sequenceDiagram
 
 - 콘솔 경로: **EC2 → Instances → ysu-mlops-lab-ec2**
 - 확인할 것: 상태가 stopped인지 확인하고 실습을 마친다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 > 실제 검증 결과: 릴리스 태그 `ci-demo-20260824`를 배포해 `/ping` HTTP 200과 `model_version` 1.2 응답을 확인했다. 1.1로 전환한 뒤 다시 릴리스 태그로 롤백하는 과정도 성공했다. OIDC 공급자와 역할은 GitHub 저장소가 정해지지 않은 상태에서 과도한 신뢰를 만들지 않도록 생성 버튼을 누르지 않았다. 수업용 워크플로는 `개정본/실습/week12/.github/workflows/deploy.yml`에 제공한다.

@@ -874,7 +874,7 @@ flowchart LR
 
 ![12 같은 EC2 역할로 Bedrock 호출 성공](../assets/aws-console/week11/12-bedrock-call-success-from-ec2-role.png)
 
-- EC2 바로가기: <https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111>
+- EC2 바로가기: <https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:>
 - Systems Manager Run Command: <https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2>
 - IAM 역할 바로가기: <https://us-east-1.console.aws.amazon.com/iam/home#/roles/details/ysu-mlops-ec2-role?section=permissions>
 - 오류 해석: `assumed-role/ysu-mlops-ec2-role/... is not authorized to perform bedrock:InvokeModel`이면 액세스 키 문제가 아니라 **인스턴스 역할의 IAM 정책 문제**다.
@@ -977,7 +977,7 @@ flowchart LR
 
 - 콘솔 경로: **CloudShell → ec2 start-instances**
 - 확인할 것: 이전 상태 stopped가 현재 상태 pending으로 바뀌는지 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 08. EC2와 인스턴스 프로파일
 
@@ -985,7 +985,7 @@ flowchart LR
 
 - 콘솔 경로: **EC2 → Instances → ysu-mlops-lab-ec2**
 - 확인할 것: 상태 running과 연결된 인스턴스 프로파일 ARN을 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 09. Bedrock 권한 추가 전 역할 정책
 
@@ -1033,7 +1033,7 @@ flowchart LR
 
 - 콘솔 경로: **Systems Manager → Run Command → Output**
 - 확인할 것: health 상태, 예측 설명, 토큰 사용량, 모델 지연을 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command/7af24b14-5756-4005-8a26-bc9b69b7b102?region=ap-northeast-2)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2)
 
 ### 15. 두 번째 응답과 애플리케이션 로그
 
@@ -1065,7 +1065,7 @@ flowchart LR
 
 - 콘솔 경로: **Systems Manager → Run Command → Command ID**
 - 확인할 것: 전체 상태 성공, 대상 1개, 오류 0개를 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command/7af24b14-5756-4005-8a26-bc9b69b7b102?region=ap-northeast-2)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2)
 
 ### 19. Run Command API 출력
 
@@ -1073,7 +1073,7 @@ flowchart LR
 
 - 콘솔 경로: **Systems Manager → Run Command → 대상 인스턴스 → Output**
 - 확인할 것: health JSON과 explain JSON이 같은 실행 기록에 남았는지 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command/7af24b14-5756-4005-8a26-bc9b69b7b102/i-09e3f0c913e337111?region=ap-northeast-2)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/systems-manager/run-command?region=ap-northeast-2)
 
 ### 20. 첫 정리 명령 실패
 
@@ -1105,7 +1105,7 @@ flowchart LR
 
 - 콘솔 경로: **EC2 → Instances → Instance state → Stop instance**
 - 확인할 것: running에서 stopping으로 바뀌는지 확인한다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
 
 ### 24. EC2 중지 완료
 
@@ -1113,4 +1113,4 @@ flowchart LR
 
 - 콘솔 경로: **EC2 → Instances → ysu-mlops-lab-ec2**
 - 확인할 것: 상태가 stopped인지 확인하고 수업 종료 체크리스트를 마친다.
-- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:instanceId=i-09e3f0c913e337111)
+- [AWS 콘솔 열기](https://ap-northeast-2.console.aws.amazon.com/ec2/home?region=ap-northeast-2#Instances:)
